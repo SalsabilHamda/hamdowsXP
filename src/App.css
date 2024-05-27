@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  overflow: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+img {
+  width: 100%;
+}
+
+#bureau>img {
+  min-width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  object-fit: cover;
+}
+
+#bureau>#barre {
+  width: 100%;
+  height: 4vh;
+  position: absolute;
+  bottom: 0;
+  background-color: #0252e5;
+  z-index: 35;
+}
+
+#bureau>#barre>#barreStart {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(0, 177, 0);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-style: italic;
+  box-shadow: 1px 1px 11px 1px #12FF08;
+  z-index: 5;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#bureau>#barre>#barreStart:active {
+  background-color: rgb(0, 141, 0);
+  box-shadow: 1px 1px 11px 1px #06c000;
+
+}
+
+#barre>.startMenu {
+  z-index: 2;
+  width: 25%;
+  height: 45vh;
+  background-color: white;
+  position: relative;
+  top: -49.5vh;
+  display: flex;
+  border-radius: 1rem 1rem 0 0;
+  flex-direction: column;
+}
+
+#barre>.startMenu>.MenuTop {
+  height: 10%;
+  background-color: #0252e5;
+  color: white;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#barre>.startMenu>.MenuTop>img {
+  width: 10%;
+  padding: 0.1rem 0.5rem;
+}
+
+
+#barre>.startMenu>.MenuBot {
+  display: flex;
+  height: 90%;
+
+}
+
+#barre>.startMenu>.MenuBot>.MenuLeft {
+  width: 50%;
+  margin: 0;
+  border: 1px solid black;
+  height: 100%;
+}
+
+#barre>.startMenu>.MenuBot>.MenuRight {
+  width: 50%;
+  margin: 0;
+  border: 1px solid black;
+  height: 100%;
+  background-color: #0251e593;
+}
+
+#bureau>.icone {
+  width: 10%;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
+  position: relative;
+}
+
+#bureau>.icone img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+#bureau>.icone:hover {
+  background-color: rgba(240, 248, 255, 0.397);
+  border: 1px solid rgba(255, 255, 255, 0.247);
+}
+
+
+
+.iconeToaster {
+  border: 1px dashed rgba(255, 255, 255, 0.432);
+  padding: 0.3rem;
+  width: 60%;
+  display: block;
+  margin: auto;
+  background-color: #0042bd;
+}
+
+.iconeToaster:hover {
+  background-color: rgba(240, 248, 255, 0.445);
+
+}
+
+.gamingFont {
+  font-family: "Press Start 2P", system-ui !important;
+  letter-spacing: -1px;
+}
+
+
+.profilFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.carouselAjout ul {
+  height: 100%;
+}
+
+.carouselAjout {
+  height: 60%;
+}
+
+.inputFooter {
+  height: 40%;
+}
+
+.simple-select {
+  width: 50%;
+}
+
+.profilCarousel.profilFooter {
+  height: 16%;
+  border-top: 2px solid black;
+  padding: 1.5%;
+  display: flex;
+  margin: 0;
+}
+
+.profilCarousel {
+
+  width: 97%;
+}
+
+.profilHeader {
+  border-bottom: 2px solid black;
+  padding: 0.5rem 0;
+  display: flex;
+  height: 8%;
+  justify-content: space-evenly;
+}
+
+.nameHeader {
+  width: 80%;
+  padding: 0 1.5%;
+}
+
+.logoHeader {
+  width: 15%;
+}
+
+.logoHeader img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.customDivCanvas {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customCanvas {
+  width: 80% !important;
+
+}
+
+.carouselItemCustom img {
+  pointer-events: none;
+  object-fit: contain;
+  height: 90%;
+}
+
+.carouselItemCustom {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 0 0.5rem;
+  height: 100%;
+}
+
+.carouselItemCustom:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+@media screen and (max-width:1300px) {
+
+  #bureau>#barre>#barreStart {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  #bureau>.icone {
+    width: 30%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+  }
+
+  #bureau>#barre>#barreStart {
+    width: 40%;
+  }
+
+  #barre>.startMenu {
+    width: 50%;
+  }
+
+}

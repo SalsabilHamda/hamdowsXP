@@ -1,0 +1,402 @@
+.windowDiv {
+    width: 50%;
+    min-width: 800px;
+    background-color: white;
+    height: 70vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.contentWindow {
+    height: 100%;
+}
+
+.NavigateurDiv {
+    width: 80%;
+    background-color: white;
+    height: 70vh;
+    position: absolute;
+    z-index: 2;
+}
+
+.windowHeader {
+
+    top: 0;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(51, 51, 255);
+    display: flex;
+    justify-content: space-between;
+    /* font-size: small; */
+}
+
+.windowHeaderButton {
+    width: min-content;
+    display: flex;
+
+}
+
+.windowHeaderButton>button {
+    width: 50%;
+    min-width: 30px;
+    height: 100%;
+    text-align: center;
+}
+
+.windowHeaderButton>.windowReduce {
+    background-color: aliceblue;
+
+}
+
+.windowHeaderButton>.windowClose {
+    background-color: rgb(216, 0, 0);
+}
+
+.windowHeader>div>img {
+    width: 7%;
+    float: left;
+}
+
+.windowHeader p {
+    margin: 0.2rem 1.3rem;
+    color: white;
+}
+
+.windowNav {
+    background-color: beige;
+    height: 8%;
+}
+
+.windowNav>button {
+    margin: 0.5rem;
+    padding: 0.2rem;
+    border: none;
+}
+
+.windowContent {
+    border: 1px solid black;
+    height: 87%;
+    display: flex;
+}
+
+.windowContent>.explication {
+    border: 1px solid black;
+    width: 30%;
+    height: 100%;
+    overflow-y: auto;
+    text-wrap: nowrap;
+}
+
+.windowContent>.explication::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.windowContent>.explication::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.windowContent>.explication::-webkit-scrollbar-thumb {
+    background: #d0c7ff;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+.windowContent>.explication::-webkit-scrollbar-thumb:hover {
+    background: #bfb3ff;
+}
+
+.windowContent>.explication::-webkit-scrollbar-thumb:active {
+    background: #a694ff;
+}
+
+.windowContent>.explication::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+.windowContent>.explication::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+.windowContent>.explication::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+.windowContent>.explication::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.windowContent>.explication>div>h2 {
+    margin: 0;
+    color: rgb(0, 89, 255);
+}
+
+
+.windowContent>.explorer {
+    border: 1px solid black;
+    width: 70%;
+    height: 100%;
+
+
+}
+
+.windowContent>.explorer>.contentExplorer {
+    height: 80%;
+    overflow: auto;
+    display: flex;
+}
+
+.windowContent>.explorer>.explicationExplorer {
+    border: 1px solid black;
+    height: 20%;
+    overflow: auto;
+}
+
+.windowContent>.explorer .windowIcone {
+    width: 17%;
+    height: 30%;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-overflow: ellipsis;
+}
+
+.windowContent>.explorer .windowIcone>p {
+    margin: 0;
+    height: 20%;
+    text-align: center;
+}
+
+.windowContent>.explorer .windowIcone>img {
+    width: 80%;
+    margin: auto;
+}
+
+.displayNone {
+    display: none;
+}
+
+.windowLongDiv {
+    width: 50%;
+    height: 80vh;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    z-index: 2;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.windowLongContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+
+    font-size: 0.8rem;
+}
+
+.navWindowLongContent {
+    height: 5%;
+    display: flex;
+}
+
+.navWindowLongContent>button {}
+
+.windowLongContentDiv {
+    background-color: aliceblue;
+    border: 1px solid black;
+    height: 90%;
+
+}
+
+.windowLongContentDiv fieldset {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.windowLongContentDiv fieldset p {
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+
+.windowLongContentDiv fieldset p::before {
+    content: '· ';
+}
+
+.stars {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.stars>img {
+    width: 10%;
+    padding: 0.2rem;
+}
+
+
+
+
+.messagerieContent {
+    display: flex;
+    height: 95%;
+    border: 1px solid black;
+}
+
+.messagerieContent>.contact {
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    font-size: 0.8rem;
+
+}
+
+.messagerieContent>.contact>a {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+.messagerieContent>.NewMessage {
+    width: 75%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.messagerieContent>.NewMessage>form {
+
+    height: 100%;
+
+}
+
+.messagerieContent>.NewMessage label {
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    width: 95%;
+    display: block;
+}
+
+.messagerieContent>.NewMessage label>input {
+    margin: 0 1rem;
+    width: 80%;
+    float: right;
+}
+
+.messagerieContent>.NewMessage textarea {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    height: 50%;
+}
+
+.messagerieContent>.NewMessage p {
+    margin: 0.5rem;
+}
+
+.messagerieContent>.NewMessage .messagerieFooter {
+    margin: 1.2rem;
+    float: right;
+}
+
+.iFrameDiv {
+    width: 99%;
+    height: 77%;
+    margin: auto;
+}
+
+.iFrameDiv>iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+.ActuContent {
+    padding: 0;
+
+}
+
+.ActuContent>div {
+    border: 1px solid black;
+    width: 80%;
+    float: left;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border-radius: 0.2rem 2rem 1rem 0;
+    background-color: white;
+}
+
+.ActuContent>.veilleTech {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ActuContent>.veilleTech>h4 {
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin: 1rem 0 0 0;
+}
+
+.profilTitleName {
+    font-size: '1rem';
+    margin: '0.5rem 0';
+}
+
+.profilSubTitleName {
+    font-size: '0.6rem';
+    margin: '0.5rem 0';
+}
+
+@media screen and (max-width:800px) {
+    .windowLongDiv {
+        width: 80%;
+    }
+
+    .profilHeader {
+        padding: 0;
+        height: 12%;
+    }
+
+    .profilTitleName,
+    .profilSubTitleName {
+        margin: 0.3rem;
+    }
+
+    .simple-select {
+        width: 70%;
+    }
+
+    .windowDiv {
+        min-width: 50%;
+        width: 90%;
+        height: 50%;
+    }
+
+    .windowContent>.explorer>.contentExplorer {
+        flex-wrap: wrap;
+
+    }
+
+    .windowContent>.explorer .windowIcone {
+        width: 30%;
+    }
+}
